@@ -21,15 +21,24 @@
 <body>
   <div id="__bundler_thumbnail">
   <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
-    <rect width="1200" height="800" fill="#003087"></rect>
-    <g transform="translate(600, 360)">
-      <!-- Stylized droplet shape evoking the Rica wordmark -->
-      <ellipse cx="0" cy="0" rx="180" ry="190" fill="#fff"></ellipse>
-      <path d="M -180 -10 C -160 -120 -60 -190 30 -180 C 100 -170 150 -120 165 -50 Z" fill="#003087" opacity="0.95"></path>
-      <text x="0" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="170" font-weight="700" font-style="italic" fill="#E31E24">R</text>
+    <rect width="1200" height="800" fill="#003087"/>
+    <!-- Rica logo: organic sticker-drop shape, faithful to the original brand mark -->
+    <g transform="translate(600, 330) scale(1.45)">
+      <!-- Back dark-blue layer (creates the sticker-peel effect at top) -->
+      <path d="M 8,-152 C 70,-164 152,-126 172,-58 C 192,10 178,98 134,136 C 90,174 8,180 -55,153 C -118,126 -140,58 -128,-18 C -116,-94 -58,-140 8,-152 Z" fill="#1A30B8"/>
+      <!-- White front layer with blue stroke -->
+      <path d="M -4,-134 C 57,-146 137,-109 157,-42 C 177,25 163,112 119,150 C 75,188 -6,194 -69,167 C -132,140 -153,72 -141,-4 C -129,-80 -70,-122 -4,-134 Z" fill="white" stroke="#1A30B8" stroke-width="10"/>
+      <!-- "Rica" text: bold italic red -->
+      <text x="2" y="52" text-anchor="middle"
+            font-family="Arial Black, Arial, sans-serif"
+            font-size="93" font-weight="900" font-style="italic"
+            fill="#E52525">Rica</text>
+      <!-- Blue dot replacing the default red dot on the "i" -->
+      <!-- Positioned at approximate cap of lowercase "i" (italic, centered text) -->
+      <circle cx="-13" cy="-9" r="11" fill="#1A30B8"/>
     </g>
-    <text x="600" y="660" text-anchor="middle" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#fff" letter-spacing="2">Viverica</text>
-    <text x="600" y="710" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="500" fill="#FFD700" letter-spacing="3">BY GRUPO RICA</text>
+    <text x="600" y="628" text-anchor="middle" font-family="Georgia, serif" font-size="60" font-weight="700" fill="#fff" letter-spacing="2">Viverica</text>
+    <text x="600" y="675" text-anchor="middle" font-family="system-ui, sans-serif" font-size="22" font-weight="500" fill="#FFD700" letter-spacing="3">BY GRUPO RICA</text>
   </svg>
 </div>
   <div id="__bundler_loading">Unpacking...</div>
